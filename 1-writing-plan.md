@@ -72,11 +72,13 @@ Phased breakdown of `0-initiative.md` into executable work. Each phase ends with
 - [x] Ch. 24 — Deploy (⏳, conceptual — Gunicorn/Dockerfile shape described, not added to `examples/`, flagged with `> ⚠️ Verify:`)
 - [x] Ch. 25 — Observability (⏳, conceptual — LOGGING/Sentry not added to `examples/`, flagged with `> ⚠️ Verify:`)
 
-## Phase 8 — Appendix (✅ core)
+## Phase 8 — Appendix (✅ core) ✅ done
 
-- [ ] Cheat sheet (the JS-anchor table)
-- [ ] Glossary
-- [ ] Full resource list
+- [x] Cheat sheet (the JS-anchor table, linked back to every chapter)
+- [x] Glossary
+- [x] Full resource list
+
+**All of Phases 0–8 are now complete.** Every ✅ core chapter and every ⏳ chapter from the original plan is written. Only Phase 9 (capstone) remains, and it stays blocked per §13 of `0-initiative.md` and the standing rule in `CLAUDE.md` — do not start it without explicit author sign-off.
 
 ## Phase 9 — Capstone (⏳, blocked)
 
