@@ -24,8 +24,13 @@ This file keeps AI-assisted sessions on track for the "Django for JS Devs" guide
 
 - Follow the chapter template in `docs/_template.md` exactly — TL;DR, mental model, "If you know JS," "The Django way," gotchas, check-yourself, go deeper, further reading & credits.
 - Keep chapters scannable: bullets and tables over prose paragraphs, side-by-side code blocks for JS vs. Django comparisons.
+- **Comparison tables and bullet points are welcome whenever applicable** — prefer them over prose when listing options, trade-offs, or side-by-side JS/Django equivalents.
 - Aim for 5–10 minutes reading time per chapter. If a chapter is running long, split depth out into a linked "go deeper" reference instead of inlining it.
 - **Mermaid diagrams are welcome and encouraged** wherever a flow, request lifecycle, or relationship between pieces (e.g. middleware → URLs → view → response) is easier to grasp visually than in prose — but only when they clarify, not when they add ceremony to something simple enough for a bullet list or one-line description. Don't force a diagram into a chapter that doesn't need one.
+- **Audience is Django beginners** (coming from JS). Don't assume prior Python/Django exposure beyond what earlier chapters already covered.
+- **Give context before mechanics.** Open a new concept by naming the problem it solves and how it connects to what was just learned, before showing syntax. Favor a conversational bridge like: *"Ok, now we've learned how to do X, but there's another problem that usually shows up around the same time — Y. Let's look at the flow first, then go into detail as we go."*
+- **Show the flow before the detail.** When introducing a multi-step process, put a short Mermaid diagram (or simple flow description) right after the framing, before code.
+- **Cross-reference earlier chapters explicitly** when reusing a concept — e.g. "as covered in [Chapter 4 — Request lifecycle](04-request-lifecycle.md)" — so the guide reads as a progression, not isolated pages.
 
 ## Publishing (later, not now)
 
