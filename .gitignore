@@ -1,0 +1,31 @@
+# Python / uv
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Django
+*.sqlite3
+media/
+staticfiles/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Node (docs tooling, if any is added later)
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
