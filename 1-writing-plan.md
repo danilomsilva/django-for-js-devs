@@ -36,16 +36,16 @@ Phased breakdown of `0-initiative.md` into executable work. Each phase ends with
 - [x] Ch. 1 — Python survival kit
 - [x] Ch. 2 — Django philosophy
 
-## Phase 4 — Part 2: Core Django (✅ core)
+## Phase 4 — Part 2: Core Django (✅ core) ✅ done
 
-- [ ] Ch. 3 — Project anatomy
-- [ ] Ch. 4 — Request lifecycle
-- [ ] Ch. 5 — URLs & views
-- [ ] Ch. 6 — Models & ORM
-- [ ] Ch. 7 — Migrations
-- [ ] Ch. 8 — Admin
-- [ ] Ch. 9 — Settings & environments
-- Each chapter grows the same `examples/` project incrementally — no throwaway example apps.
+- [x] Ch. 3 — Project anatomy
+- [x] Ch. 4 — Request lifecycle (added `greetings/middleware.py`)
+- [x] Ch. 5 — URLs & views (added `ping` FBV alongside the `GreetingViewSet` CBV)
+- [x] Ch. 6 — Models & ORM (added `GreetingCategory` + FK relation)
+- [x] Ch. 7 — Migrations (references the two real migrations generated above)
+- [x] Ch. 8 — Admin (registered both models with list_display/list_filter)
+- [x] Ch. 9 — Settings & environments
+- Each chapter grew the same `examples/` project incrementally — no throwaway example apps. 6/6 tests passing, ruff clean.
 
 ## Phase 5 — Part 3: APIs for React (✅ core, plus two ⏳)
 
