@@ -28,7 +28,7 @@ class GreetingViewSet(viewsets.ModelViewSet):
     Greeting in one class, wired to a full CRUD URL set via the router.
     """
 
-    queryset = Greeting.objects.all()
+    queryset = Greeting.objects.select_related("category").all()
     serializer_class = GreetingSerializer
     permission_classes = [IsStaffOrReadOnly]
     filterset_fields = ["category__name"]

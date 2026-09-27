@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "django_filters",
+    "drf_spectacular",
     "greetings",
 ]
 
@@ -61,6 +62,13 @@ REST_FRAMEWORK = {
     ],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Django for JS Devs — example API",
+    "DESCRIPTION": "The example project used throughout the guide.",
+    "VERSION": "1.0.0",
 }
 
 MIDDLEWARE = [

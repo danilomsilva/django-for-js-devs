@@ -47,7 +47,7 @@ Phased breakdown of `0-initiative.md` into executable work. Each phase ends with
 - [x] Ch. 9 — Settings & environments
 - Each chapter grew the same `examples/` project incrementally — no throwaway example apps. 6/6 tests passing, ruff clean.
 
-## Phase 5 — Part 3: APIs for React (✅ core, plus two ⏳)
+## Phase 5 — Part 3: APIs for React (✅ core, plus two ⏳) ✅ done
 
 - [x] Ch. 10 — DRF intro
 - [x] Ch. 11 — Serializers (added `validate_message`)
@@ -55,14 +55,14 @@ Phased breakdown of `0-initiative.md` into executable work. Each phase ends with
 - [x] Ch. 13 — Permissions (added `IsStaffOrReadOnly`)
 - [x] Ch. 14 — Pagination, filtering, ordering (added `django-filter`, pagination, ordering)
 - [x] Ch. 17 — Dev setup React ↔ Django (added `django-cors-headers`)
-- [ ] Ch. 15 — Errors & validation (⏳ — deferred until Ch.19, the last ✅ chapter, is done)
-- [ ] Ch. 16 — Typed contracts (⏳ — same condition)
+- [x] Ch. 15 — Errors & validation (⏳)
+- [x] Ch. 16 — Typed contracts (⏳, added drf-spectacular + OpenAPI schema endpoint)
 
-## Phase 6 — Part 4: Data & Postgres
+## Phase 6 — Part 4: Data & Postgres ✅ done
 
-- [ ] Ch. 19 — N+1 queries (✅)
-- [ ] Ch. 18 — Postgres with Django (⏳)
-- [ ] Ch. 20 — Transactions (⏳)
+- [x] Ch. 19 — N+1 queries (✅, added `select_related` + `django_assert_num_queries` test)
+- [x] Ch. 18 — Postgres with Django (⏳, has one `> ⚠️ Verify:` flag — no `JSONField`/index in `examples/` yet to test against)
+- [x] Ch. 20 — Transactions (⏳, added `services.py` with `@transaction.atomic`)
 
 ## Phase 7 — Part 5: Quality & ops (all ⏳)
 

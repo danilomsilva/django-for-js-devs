@@ -4,6 +4,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.test import APIClient
 
 from .models import Greeting, GreetingCategory
+from .services import MessageRequiredError, create_greeting_with_new_category
 
 
 @pytest.mark.django_db
@@ -139,6 +140,51 @@ def test_greetings_ordering():
 
     messages = [item["message"] for item in response.json()["results"]]
     assert messages == ["A", "B"]
+
+
+@pytest.mark.django_db
+def test_greetings_list_uses_select_related_to_avoid_n_plus_1(django_assert_num_queries):
+    formal = GreetingCategory.objects.create(name="Formal")
+    for i in range(5):
+        Greeting.objects.create(message=f"Greeting {i}", category=formal)
+    client = APIClient()
+
+    # 1 query for the page of greetings (JOINed to category via select_related)
+    # + 1 query for the pagination count = 2, regardless of how many greetings.
+    with django_assert_num_queries(2):
+        response = client.get("/api/greetings/")
+
+    assert response.status_code == 200
+    assert len(response.json()["results"]) == 5
+
+
+@pytest.mark.django_db
+def test_create_greeting_with_new_category_commits_both():
+    greeting = create_greeting_with_new_category("Good day", "Formal")
+
+    assert GreetingCategory.objects.filter(name="Formal").exists()
+    assert greeting.category.name == "Formal"
+
+
+@pytest.mark.django_db
+def test_create_greeting_with_new_category_rolls_back_on_error():
+    with pytest.raises(MessageRequiredError):
+        create_greeting_with_new_category("   ", "Formal")
+
+    # The category insert ran before the error, but the whole function is
+    # wrapped in transaction.atomic — so it's rolled back along with everything else.
+    assert not GreetingCategory.objects.exists()
+    assert not Greeting.objects.exists()
+
+
+def test_openapi_schema_is_served():
+    client = APIClient()
+
+    response = client.get("/api/schema/", {"format": "json"})
+
+    assert response.status_code == 200
+    schema = response.json()
+    assert "/api/greetings/" in schema["paths"]
 
 
 def test_ping_endpoint():
