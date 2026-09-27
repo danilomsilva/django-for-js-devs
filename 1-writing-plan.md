@@ -64,13 +64,13 @@ Phased breakdown of `0-initiative.md` into executable work. Each phase ends with
 - [x] Ch. 18 — Postgres with Django (⏳, has one `> ⚠️ Verify:` flag — no `JSONField`/index in `examples/` yet to test against)
 - [x] Ch. 20 — Transactions (⏳, added `services.py` with `@transaction.atomic`)
 
-## Phase 7 — Part 5: Quality & ops (all ⏳)
+## Phase 7 — Part 5: Quality & ops (all ⏳) ✅ done
 
-- [ ] Ch. 21 — Testing
-- [ ] Ch. 22 — Tooling
-- [ ] Ch. 23 — Background tasks
-- [ ] Ch. 24 — Deploy
-- [ ] Ch. 25 — Observability
+- [x] Ch. 21 — Testing (names the pytest-django/APIClient patterns already used throughout `examples/`)
+- [x] Ch. 22 — Tooling (ruff already enforced since Phase 1; mypy/pre-commit flagged as `> ⚠️ Verify:`, not added)
+- [x] Ch. 23 — Background tasks (⏳, conceptual — Celery not added to `examples/`, flagged with `> ⚠️ Verify:`; would need a Redis broker)
+- [x] Ch. 24 — Deploy (⏳, conceptual — Gunicorn/Dockerfile shape described, not added to `examples/`, flagged with `> ⚠️ Verify:`)
+- [x] Ch. 25 — Observability (⏳, conceptual — LOGGING/Sentry not added to `examples/`, flagged with `> ⚠️ Verify:`)
 
 ## Phase 8 — Appendix (✅ core)
 

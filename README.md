@@ -32,7 +32,7 @@ See the full chapter plan in [`1-writing-plan.md`](1-writing-plan.md). Chapters 
 - **Part 2 — Core Django:** [03 — Project anatomy](docs/03-project-anatomy.md) ✅ · [04 — Request lifecycle](docs/04-request-lifecycle.md) ✅ · [05 — URLs & views](docs/05-urls-and-views.md) ✅ · [06 — Models & ORM](docs/06-models-and-orm.md) ✅ · [07 — Migrations](docs/07-migrations.md) ✅ · [08 — Admin](docs/08-admin.md) ✅ · [09 — Settings & environments](docs/09-settings-and-environments.md) ✅
 - **Part 3 — APIs for React:** [10 — DRF intro](docs/10-drf-intro.md) ✅ · [11 — Serializers](docs/11-serializers.md) ✅ · [12 — Auth](docs/12-auth.md) ✅ · [13 — Permissions](docs/13-permissions.md) ✅ · [14 — Pagination, filtering, ordering](docs/14-pagination-filtering-ordering.md) ✅ · [15 — Errors & validation](docs/15-errors-and-validation.md) · [16 — Typed contracts](docs/16-typed-contracts.md) · [17 — Dev setup React ↔ Django](docs/17-dev-setup-react-django.md) ✅
 - **Part 4 — Data & Postgres:** [18 — Postgres with Django](docs/18-postgres-with-django.md) · [19 — N+1 queries](docs/19-n-plus-1-queries.md) ✅ · [20 — Transactions](docs/20-transactions.md)
-- **Part 5 — Quality & ops:** 21 — Testing · 22 — Tooling · 23 — Background tasks · 24 — Deploy · 25 — Observability
+- **Part 5 — Quality & ops:** [21 — Testing](docs/21-testing.md) · [22 — Tooling](docs/22-tooling.md) · [23 — Background tasks](docs/23-background-tasks.md) · [24 — Deploy](docs/24-deploy.md) · [25 — Observability](docs/25-observability.md)
 - **Appendix:** JS↔Django cheat sheet · Glossary · Resource list
 
 Chapters not yet linked above haven't been written yet — check back, or see the plan for status.
