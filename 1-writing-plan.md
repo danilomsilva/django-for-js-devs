@@ -31,11 +31,10 @@ Phased breakdown of `0-initiative.md` into executable work. Each phase ends with
 - [x] Add "Further reading & credits"
 - Author granted autonomy through Phase 8 — continuing without stopping here.
 
-## Phase 3 — Part 1: Mindset (✅ core)
+## Phase 3 — Part 1: Mindset (✅ core) ✅ done
 
-- [ ] Ch. 1 — Python survival kit
-- [ ] Ch. 2 — Django philosophy
-- One PR per chapter; author runs code + reviews before merge.
+- [x] Ch. 1 — Python survival kit
+- [x] Ch. 2 — Django philosophy
 
 ## Phase 4 — Part 2: Core Django (✅ core)
 
