@@ -27,7 +27,7 @@ You're comfortable with **React** on the frontend, you've built or worked on **N
 
 See the full chapter plan in [`1-writing-plan.md`](1-writing-plan.md). Chapters are published as they're written; ✅-marked chapters in the plan are written before ⏳-marked ones.
 
-- **Part 0 — Intro:** [00 — Intro](docs/00-intro.md)
+- **Part 0 — Intro:** [00 — Intro](docs/00-intro.md) ✅
 - **Part 1 — Mindset:** 01 — Python survival kit · 02 — Django philosophy
 - **Part 2 — Core Django:** 03 — Project anatomy · 04 — Request lifecycle · 05 — URLs & views · 06 — Models & ORM · 07 — Migrations · 08 — Admin · 09 — Settings & environments
 - **Part 3 — APIs for React:** 10 — DRF intro · 11 — Serializers · 12 — Auth · 13 — Permissions · 14 — Pagination, filtering, ordering · 15 — Errors & validation · 16 — Typed contracts · 17 — Dev setup React ↔ Django

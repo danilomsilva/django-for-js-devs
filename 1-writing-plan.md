@@ -2,34 +2,34 @@
 
 Phased breakdown of `0-initiative.md` into executable work. Each phase ends with a stop-and-review point per the working agreement — small PRs, one chapter/step at a time.
 
-## Phase 0 — Scaffold (this session)
+## Phase 0 — Scaffold (this session) ✅ done
 
-- [ ] `0-initiative.md` (this brief)
-- [ ] `1-writing-plan.md` (this file)
-- [ ] `CLAUDE.md` — standing rules for AI-assisted sessions in this repo
-- [ ] `README.md` — purpose, audience, how to read, versions, AI disclosure, TOC
-- [ ] `LICENSE` (MIT) + `LICENSE-CONTENT` (CC BY 4.0)
-- [ ] `CREDITS.md` (seed with Django, DRF, and any other sources already referenced)
-- [ ] `CONTRIBUTING.md` — style rules, PR checklist, how to suggest fixes
-- [ ] `docs/_template.md` — chapter template
-- [ ] `.gitignore` for Python/uv/Node artifacts
-- [ ] Push to `origin/main`
+- [x] `0-initiative.md` (this brief)
+- [x] `1-writing-plan.md` (this file)
+- [x] `CLAUDE.md` — standing rules for AI-assisted sessions in this repo
+- [x] `README.md` — purpose, audience, how to read, versions, AI disclosure, TOC
+- [x] `LICENSE` (MIT) + `LICENSE-CONTENT` (CC BY 4.0)
+- [x] `CREDITS.md` (seed with Django, DRF, and any other sources already referenced)
+- [x] `CONTRIBUTING.md` — style rules, PR checklist, how to suggest fixes
+- [x] `docs/_template.md` — chapter template
+- [x] `.gitignore` for Python/uv/Node artifacts
+- [x] Push to `origin/main`
 
-## Phase 1 — Runnable example project
+## Phase 1 — Runnable example project ✅ done
 
-- [ ] `examples/` — minimal Django + DRF project scaffolded with `uv`
-- [ ] `examples/pyproject.toml` pinned to verified current Django LTS / DRF / Python versions
-- [ ] `docker-compose.yml` for Postgres (local dev)
-- [ ] One passing test (pytest-django)
-- [ ] `.github/workflows/ci.yml` — ruff check + ruff format --check + pytest with Postgres service container
-- [ ] Confirm CI is green on a PR
+- [x] `examples/` — minimal Django + DRF project scaffolded with `uv`
+- [x] `examples/pyproject.toml` pinned to verified current Django LTS / DRF / Python versions
+- [x] `docker-compose.yml` for Postgres (local dev)
+- [x] One passing test (pytest-django) — 3 tests, passing locally (SQLite) and in CI (Postgres)
+- [x] `.github/workflows/ci.yml` — ruff check + ruff format --check + pytest with Postgres service container
+- [x] Confirm CI is green — verified on push to main (run 36326831866)
 
-## Phase 2 — Chapter 0 (Intro) draft
+## Phase 2 — Chapter 0 (Intro) draft ✅ done
 
-- [ ] Draft `docs/00-intro.md` using the template: who it's for, how to read it, setup with `uv`, Postgres via Docker
-- [ ] Verify install/setup steps actually run end-to-end
-- [ ] Add "Further reading & credits"
-- [ ] **Stop for author review** — end of first-session deliverables
+- [x] Draft `docs/00-intro.md` using the template: who it's for, how to read it, setup with `uv`, Postgres via Docker
+- [x] Verify install/setup steps actually run end-to-end (`uv sync`, `migrate`, `pytest` all verified; Postgres path verified via CI since local Docker Desktop wasn't running this session)
+- [x] Add "Further reading & credits"
+- Author granted autonomy through Phase 8 — continuing without stopping here.
 
 ## Phase 3 — Part 1: Mindset (✅ core)
 
