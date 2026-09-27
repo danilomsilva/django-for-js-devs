@@ -30,7 +30,7 @@ See the full chapter plan in [`1-writing-plan.md`](1-writing-plan.md). Chapters 
 - **Part 0 — Intro:** [00 — Intro](docs/00-intro.md) ✅
 - **Part 1 — Mindset:** [01 — Python survival kit](docs/01-python-survival-kit.md) ✅ · [02 — Django philosophy](docs/02-django-philosophy.md) ✅
 - **Part 2 — Core Django:** [03 — Project anatomy](docs/03-project-anatomy.md) ✅ · [04 — Request lifecycle](docs/04-request-lifecycle.md) ✅ · [05 — URLs & views](docs/05-urls-and-views.md) ✅ · [06 — Models & ORM](docs/06-models-and-orm.md) ✅ · [07 — Migrations](docs/07-migrations.md) ✅ · [08 — Admin](docs/08-admin.md) ✅ · [09 — Settings & environments](docs/09-settings-and-environments.md) ✅
-- **Part 3 — APIs for React:** 10 — DRF intro · 11 — Serializers · 12 — Auth · 13 — Permissions · 14 — Pagination, filtering, ordering · 15 — Errors & validation · 16 — Typed contracts · 17 — Dev setup React ↔ Django
+- **Part 3 — APIs for React:** [10 — DRF intro](docs/10-drf-intro.md) ✅ · [11 — Serializers](docs/11-serializers.md) ✅ · [12 — Auth](docs/12-auth.md) ✅ · [13 — Permissions](docs/13-permissions.md) ✅ · [14 — Pagination, filtering, ordering](docs/14-pagination-filtering-ordering.md) ✅ · [17 — Dev setup React ↔ Django](docs/17-dev-setup-react-django.md) ✅ · 15 — Errors & validation (⏳) · 16 — Typed contracts (⏳)
 - **Part 4 — Data & Postgres:** 18 — Postgres with Django · 19 — N+1 queries · 20 — Transactions
 - **Part 5 — Quality & ops:** 21 — Testing · 22 — Tooling · 23 — Background tasks · 24 — Deploy · 25 — Observability
 - **Appendix:** JS↔Django cheat sheet · Glossary · Resource list

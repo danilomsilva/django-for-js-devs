@@ -9,3 +9,8 @@ class GreetingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Greeting
         fields = ["id", "message", "category", "created_at"]
+
+    def validate_message(self, value):
+        if value.strip() == "":
+            raise serializers.ValidationError("message cannot be blank.")
+        return value

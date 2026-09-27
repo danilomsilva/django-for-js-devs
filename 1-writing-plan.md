@@ -49,14 +49,14 @@ Phased breakdown of `0-initiative.md` into executable work. Each phase ends with
 
 ## Phase 5 — Part 3: APIs for React (✅ core, plus two ⏳)
 
-- [ ] Ch. 10 — DRF intro
-- [ ] Ch. 11 — Serializers
-- [ ] Ch. 12 — Auth
-- [ ] Ch. 13 — Permissions
-- [ ] Ch. 14 — Pagination, filtering, ordering
-- [ ] Ch. 17 — Dev setup React ↔ Django
-- [ ] Ch. 15 — Errors & validation (⏳, only after all ✅ chapters across all parts are done, unless author asks sooner)
-- [ ] Ch. 16 — Typed contracts (⏳, same condition)
+- [x] Ch. 10 — DRF intro
+- [x] Ch. 11 — Serializers (added `validate_message`)
+- [x] Ch. 12 — Auth (added token auth: `rest_framework.authtoken`, `whoami`)
+- [x] Ch. 13 — Permissions (added `IsStaffOrReadOnly`)
+- [x] Ch. 14 — Pagination, filtering, ordering (added `django-filter`, pagination, ordering)
+- [x] Ch. 17 — Dev setup React ↔ Django (added `django-cors-headers`)
+- [ ] Ch. 15 — Errors & validation (⏳ — deferred until Ch.19, the last ✅ chapter, is done)
+- [ ] Ch. 16 — Typed contracts (⏳ — same condition)
 
 ## Phase 6 — Part 4: Data & Postgres
 
